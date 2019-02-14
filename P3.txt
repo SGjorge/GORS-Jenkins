@@ -1,2 +1,6 @@
 Pasos de la practica 3:
-	1.-
+	1.- docker build -t jenkins .
+	2.- docker run -ti --privileged -p 8080:8080 -p 50001:50001 -p 24:22 --env JENKINS_SLAVE_AGENT_PORT=50001 jenkins
+	3.- Esclavo: docker run -ti jenkins bash
+
+	4.- Instalar pluggin en jenkins, xunit
